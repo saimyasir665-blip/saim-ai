@@ -66,7 +66,7 @@ chatForm.addEventListener("submit", async (event) => {
 
     try {
 
-        const response = await fetch("http://localhost:3000/chat", {
+        const response = await fetch("/chat",  {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
