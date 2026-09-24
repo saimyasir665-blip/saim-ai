@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta SAIM AI ASISTANT
+="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SAIM AI Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <span>✦</span>
+                saim AI
+            </div>
+
+            <button class="new-chat" id="newChat">
+                + New Chat
+            </button>
+
+            <div class="sidebar-section">
+                <p>Recent Chats</p>
+ 
+                <div id="chatHistory"></div>
+            </div>
+
+            <div class="sidebar-bottom">
+                <button id="clearChat">Clear Chat</button>
+                <button id="settingsBtn">⚙ Settings</button>
+                <div id="settingsPanel" class="settings-panel">
+    <h3>Settings</h3>
+
+    <label>
+        Dark Mode
+        <input type="checkbox" id="darkModeToggle">
+    </label>
+
+    <br><br>
+
+    <button id="closeSettings">Close</button>
+</div>
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main">
+
+            <!-- Header -->
+            <header class="header">
+
+                <div class="header-left">
+                    <button id="menuBtn" class="menu-btn">☰</button>
+
+                    <div>
+                        <h2>SAIM AI Assistant</h2>
+                        <span class="status">
+                            <i></i> Online
+                        </span>
+                    </div>
+                </div>
+
+                <button id="themeToggle" class="theme-btn">
+                    🌙
+                </button>
+
+            </header>
+
+
+            <!-- Chat Area -->
+            <section class="chat-area" id="chatArea">
+
+                <div class="welcome" id="welcome">
+
+                    <div class="welcome-icon">✦</div>
+
+                    <h1>How can I help you?</h1>
+
+                    <p>
+                        Your personal AI assistant for learning,
+                        productivity and creativity.
+                    </p>
+
+                    <div class="suggestions">
+
+                        <button class="suggestion">
+                            ✍️ Write an email
+                        </button>
+
+                        <button class="suggestion">
+                            💻 Help me code
+                        </button>
+
+                        <button class="suggestion">
+                            🛍️ Shopify product ideas
+                        </button>
+
+                        <button class="suggestion">
+                            📅 Plan my day
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Input Area -->
+            <div class="input-wrapper">
+
+                <form id="chatForm" class="chat-form">
+
+                    <textarea
+                        id="messageInput"
+                        placeholder="Message SAIM AI..."
+                        rows="1"
+                    ></textarea>
+
+                    <button type="submit" id="sendBtn">
+                        ➤
+                    </button>
+                    <button id="voiceBtn" type="button">🎤</button>
+
+                </form>
+
+                <p class="disclaimer">
+                    saim AI can make mistakes. Check important information.
+                </p>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="voice.js"></script>
+
+</body>
+</html>
